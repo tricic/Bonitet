@@ -1,0 +1,280 @@
+/***************************** HEADER ******************************/
+header {
+    background-color: #2c3e50;
+    font-family: 'Russo One', sans-serif;
+}
+
+/****** LOGO *******/
+
+header #logo {
+    font-size: 50px;
+    color: #ecf0f1;
+}
+
+/****** NAVIGATION *******/
+
+header div.row {
+    display: flex;
+}
+
+header nav {
+    float: right;
+    display: flex;
+    height: 100%;
+    
+    border-left: 1px solid gray;
+}
+
+header nav a {
+    align-items: stretch;
+
+    font-size: 25px;
+    color: #ecf0f1;
+
+    padding-top: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-right: 1px solid gray;
+
+    transition: 0.5s all ease;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header nav a {
+        font-size: 20px;
+        padding-top: 6%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header div.row {
+        display: block;
+    }
+
+    header div#logo {
+        text-align: center;
+    }
+
+    header div#nav {
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
+    header nav {
+        display: block;
+        float: none;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        font-size: 16px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-top: 1px solid gray;
+    }
+}
+
+header nav a:hover {
+    text-decoration: none;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+header nav a:focus {
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+header nav a.current {
+    background-color: #34495e;
+}
+
+
+/***************************** MAIN ******************************/
+
+/*** FIRST SECTION /***/
+
+section#first {
+    height: 400px;
+    background-color: #ecf0f1;
+    background-image: url("images/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+/*** SECOND SECTION ***/
+
+section#second {
+    background-color: #67809F;
+}
+
+section#second p {
+    font-family: 'Russo One', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+/*** THIRD SECTION ***/
+
+section#third {
+    background-color: #ecf0f1;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section#third h3 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+section#third div.container > p {
+    display: inline-block;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+
+section#third img {
+    border-radius: 10px;
+}
+
+section#third .boxText {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+section#third .usluge {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section#third .usluge p {
+    font-size: 30px;
+    float: right;
+}
+
+section#third button {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section#third .box img {
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+
+}
+
+/*** FOURTH SECTION ***/
+
+section#fourth {
+    background-color: #2C3E50;
+    
+    -webkit-box-shadow: 0px -7px 22px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px -7px 22px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px -7px 22px 0px rgba(0,0,0,0.46);
+}
+
+section#fourth .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section#fourth .infoBox {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section#fourth .infoBox h4 {
+    font-weight: bold;
+}
+
+section#fourth .infoBox span {
+    font-size: 20px;
+}
+
+section#fourth .infoBox i {
+    font-size: 50px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    section#fourth .infoBox .email {
+        font-size: 16px;
+    }
+    
+    section#fourth .infoBox span[style="visibility: hidden;"] {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#fourth .infoBox {
+        border-right: 1px solid dimgray;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section#fourth .row {
+        padding: 0px;
+    }
+
+    section#fourth .infoBox {
+        text-align: unset;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid dimgray;
+    }
+
+    section#fourth .infoBox h4 {
+        float: right;
+    }
+
+    section#fourth .infoBox i {
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    section#fourth .infoBox span {
+        display: inline-block;
+    }
+
+    section#fourth .infoBox span[style="visibility: hidden;"] {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#fourth .infoBox h4 {
+        display: none;
+    }
+
+    section#fourth .infoBox span {
+        font-size: 18px;
+    }
+}
+
+
+/***************************** GOOGLE MAP *******************************/
+
+
+/***************************** FOOTER ******************************/
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;    
+}
