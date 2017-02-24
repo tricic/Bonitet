@@ -1,11 +1,22 @@
-*:
-    Responsive transitions
+To build:
+    ☐ Build 'Kontakt' page
+	☐ Build 'Usluge' page
+	☐ Build 'Korisni linkovi' page
 
+Pages:
+	☐ Add transitions to the pages
+ 
+Navigation:
+	☐ Enlarge navigation fonts in xs screens
+	☐ Perhaps make current/hover link brighter?
 
-Googlemap:
-    Embed map from google.maps
+First section:
+	☐ Create first section
+	☐ Perhaps make a slider
 
+Google map:
+	☐ Recreate google map by embeding it directly from Google Maps
 
 Footer:
-    Copyright to float left
-    Make "Back to top" button
+	☐ Move/float copyright section to the left
+	☐ Create "Back to top" button on the right
