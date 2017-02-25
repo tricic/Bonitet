@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /***************************** HEADER ******************************/
 header {
     background-color: #2c3e50;
@@ -37,18 +41,39 @@ header nav a {
 
     border-right: 1px solid gray;
 
-    transition: 0.5s all ease;
+    transition: 0.5s background-color ease;
 
+}
+
+header nav a:hover {
+    text-decoration: none;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+header nav a:focus {
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+header nav a.current {
+    background-color: #3a5168;
+}
+
+@media screen and (min-width: 768px) {
+    header nav a {
+        padding-top: 22px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     header nav a {
         font-size: 20px;
-        padding-top: 6%;
+        padding-top: 26px;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { /* Navigation for mobile phones */
     header div.row {
         display: block;
     }
@@ -71,28 +96,12 @@ header nav a {
 
     header nav a {
         display: block;
-        font-size: 16px;
+        font-size: 20px;
         padding-top: 2px;
         padding-bottom: 2px;
         border-top: 1px solid gray;
     }
 }
-
-header nav a:hover {
-    text-decoration: none;
-    background-color: #34495e;
-    color: #ecf0f1;
-}
-
-header nav a:focus {
-    text-decoration: none;
-    color: #ecf0f1;
-}
-
-header nav a.current {
-    background-color: #34495e;
-}
-
 
 /***************************** MAIN ******************************/
 
@@ -101,9 +110,6 @@ header nav a.current {
 section#first {
     height: 400px;
     background-color: #ecf0f1;
-    background-image: url("images/first-background.jpg");
-    background-repeat: no-repeat;
-    background-position-x: 50%;
 }
 
 /*** SECOND SECTION ***/
@@ -113,7 +119,7 @@ section#second {
 }
 
 section#second p {
-    font-family: 'Russo One', cursive;
+    font-family: 'Russo One', sans-serif;
     font-size: 40px;
     text-align: center;
     color: white;
@@ -124,7 +130,6 @@ section#second p {
 section#third {
     background-color: #ecf0f1;
     padding-top: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 section#third h3 {
@@ -190,7 +195,6 @@ section#fourth .row {
 section#fourth .infoBox {
     color: white;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
 }
 
 section#fourth .infoBox h4 {
@@ -261,6 +265,10 @@ section#fourth .infoBox i {
     section#fourth .infoBox span {
         font-size: 18px;
     }
+
+    footer p {
+        font-size: 14px;
+    }
 }
 
 
@@ -272,9 +280,21 @@ section#fourth .infoBox i {
 footer {
     background-color: #2C3E50;
     color: white;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     padding-top: 20px;
     padding-bottom: 10px;    
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer a {
+    float: right;
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
 }
