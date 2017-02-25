@@ -1,22 +1,37 @@
+************************************* HIGH PRIORITY **************************************
 To build:
-    ☐ Build 'Kontakt' page
+    ✔ Build 'Kontakt' page @done (February 25th 2017, 0:13)
 	☐ Build 'Usluge' page
 	☐ Build 'Korisni linkovi' page
 
 Pages:
-	☐ Add transitions to the pages
+	✘ Add transitions to the pages @canceled (February 25th 2017, 0:27) 
+		// Transitions are laggy, canceled
+	☐ Make contact page functional
  
 Navigation:
-	☐ Enlarge navigation fonts in xs screens
-	☐ Perhaps make current/hover link brighter?
+	✔ Enlarge navigation fonts for xs screens @done (February 25th 2017, 0:44)
+	✔ Perhaps make current/hover link brighter? @done (February 25th 2017, 0:17)
+	✔ Fix broken navigation @Firefox browser @done (February 25th 2017, 0:35) 
+		// Done by fixing anchors padding-top to px instead of %
 
 First section:
 	☐ Create first section
 	☐ Perhaps make a slider
 
+Footer:
+	✔ Move/float copyright section to the left @done (February 25th 2017, 1:21)
+	✔ Create "Back to top" button on the right @done (February 25th 2017, 1:21)
+*******************************************************************************************
+
+
+
+************************************* LOW PRIORITY ****************************************
+*:
+	☐ Do meta tags / SEO
+	☐ Decrease font sizes for xs screens if needed
+
 Google map:
 	☐ Recreate google map by embeding it directly from Google Maps
-
-Footer:
-	☐ Move/float copyright section to the left
-	☐ Create "Back to top" button on the right
+	☐ Make map not scrolls (by mouse scroll) when mouse is hovering it, requires JavaScript
+*******************************************************************************************
