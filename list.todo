@@ -1,7 +1,7 @@
 ************************************* HIGH PRIORITY **************************************
 To build:
     ✔ Build 'Kontakt' page @done (February 25th 2017, 0:13)
-	☐ Build 'Usluge' page
+	✔ Build 'Usluge' page @done (February 27th 2017, 22:57)
 	☐ Build 'Korisni linkovi' page
 
 Pages:
@@ -32,7 +32,7 @@ Footer:
 ************************************* LOW PRIORITY ****************************************
 *:
 	☐ Do meta tags / SEO
-	☐ Decrease font sizes for xs screens if needed
+	✔ Decrease font sizes for xs screens if needed @done (February 27th 2017, 22:57)
 		✔ Section2  @done (February 27th 2017, 17:40)
 
 Navigation:
