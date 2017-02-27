@@ -19,7 +19,7 @@ First section:
 	✔ Create first section @done (February 27th 2017, 2:19)
 	✘ Perhaps make a slider @canceled (February 27th 2017, 2:19)
 		// Looks fine as it is
-	☐ Optimize section for xs screens
+	✔ Optimize section for xs screens @done (February 27th 2017, 17:35)
 
 Footer:
 	✔ Move/float copyright section to the left @done (February 25th 2017, 1:21)
@@ -33,6 +33,7 @@ Footer:
 *:
 	☐ Do meta tags / SEO
 	☐ Decrease font sizes for xs screens if needed
+		✔ Section2  @done (February 27th 2017, 17:40)
 
 Navigation:
 	☐ Make on-click toggle navigation for xs screens, requires JavaScript

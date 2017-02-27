@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #ecf0f1;
 }
 
 /***************************** HEADER ******************************/
@@ -108,7 +109,6 @@ header nav a.current {
 /*** FIRST SECTION /***/
 
 section#first {
-    background-color: #ecf0f1;
     padding-top: 25px;
     padding-bottom: 35px;
     background: url("../images/section1bg.jpg") no-repeat center center;
@@ -116,7 +116,7 @@ section#first {
 }
 
 section#first .aboutUs {
-    background-color: rgba(236, 240, 241, 0.5);
+    background-color: rgba(236, 240, 241, 0.6);
 }
 
 section#first .aboutUs h1 {
@@ -125,6 +125,20 @@ section#first .aboutUs h1 {
 
 section#first .aboutUs p {
     font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    section#first {
+        background-size: cover;
+    }
+
+    section#first .aboutUs h1 {
+        font-size: 22px;
+    }
+
+    section#first .aboutUs p {
+        font-size: 17px;
+    }
 }
 
 /*** SECOND SECTION ***/
@@ -138,12 +152,18 @@ section#second p {
     font-size: 40px;
     text-align: center;
     color: white;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    section#second p {
+        font-size: 30px;
+    }
 }
 
 /*** THIRD SECTION ***/
 
 section#third {
-    background-color: #ecf0f1;
     padding-top: 20px;
 }
 
