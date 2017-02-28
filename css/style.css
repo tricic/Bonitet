@@ -281,10 +281,13 @@ section#fourth .infoBox i {
         width: 50px;
         text-align: center;
         margin-right: 15px;
+        float: left; /* Only for IE, android browser.. */
     }
 
     section#fourth .infoBox span {
         display: inline-block;
+        float: left; /* Only for IE, android browser.. */
+        text-align: left;
     }
 
     section#fourth .infoBox span[style="visibility: hidden;"] {
