@@ -21,6 +21,23 @@ First section:
 		// Looks fine as it is
 	✔ Optimize section for xs screens @done (February 27th 2017, 17:35)
 
+Second section:
+	✔ 'Š' is broken in IE, Edge, android browser... @done (February 28th 2017, 13:47)
+
+Third section:
+	✔ Button is not linked @done (February 28th 2017, 13:52)
+
+Fourth section:
+	✔ infoBoxes are centered (on <= small screens) in IE, android browser... @done (February 28th 2017, 14:11)
+		// Added property float: left for i and span element (into media query for <= small screens)
+	☐ .infoBox > span element is not vertically centered to bottom in IE, Edge, android browser...
+
+Google map:
+	☐ When on remote server, Google map is not shown at all
+		// Console log msg:
+		// Mixed Content: The page at 'https://bonitet.000webhostapp.com/' was loaded over HTTPS, but requested an insecure resource 'http://www.citymaps.ie/create-google-map/map.php?width=100%&height=350&hl=e…njigovodstvo%20%22BONITET%22%20Cazin)&ie=UTF8&t=&z=17&iwloc=A&output=embed'. This request // has been blocked; the content must be served over HTTPS.
+		// Fix: embed directly from google maps
+
 Footer:
 	✔ Move/float copyright section to the left @done (February 25th 2017, 1:21)
 	✔ Create "Back to top" button on the right @done (February 25th 2017, 1:21)
