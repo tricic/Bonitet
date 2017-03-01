@@ -33,9 +33,10 @@ Fourth section:
 	☐ .infoBox > span element is not vertically centered to bottom in IE, Edge, android browser...
 
 Google map:
-	☐ When on remote server, Google map is not shown at all
+	✔ When on remote server, Google map is not shown at all @done (March 1st 2017, 23:23)
 		// Console log msg:
-		// Mixed Content: The page at 'https://bonitet.000webhostapp.com/' was loaded over HTTPS, but requested an insecure resource 'http://www.citymaps.ie/create-google-map/map.php?width=100%&height=350&hl=e…njigovodstvo%20%22BONITET%22%20Cazin)&ie=UTF8&t=&z=17&iwloc=A&output=embed'. This request // has been blocked; the content must be served over HTTPS.
+		// Mixed Content: The page at 'https://bonitet.000webhostapp.com/' was loaded over HTTPS, but requested an insecure resource 'http://www.citymaps.ie/create-google-map/map.php?width=100%&height=350&hl=e…njigovodstvo%20%22BONITET%22%20Cazin)&ie=UTF8&t=&z=17&iwloc=A&output=embed'. This request
+		// has been blocked; the content must be served over HTTPS.
 		// Fix: embed directly from google maps
 
 Footer:
@@ -56,6 +57,6 @@ Navigation:
 	☐ Make on-click toggle navigation for xs screens, requires JavaScript
 
 Google map:
-	☐ Recreate google map by embeding it directly from Google Maps
+	✔ Recreate google map by embeding it directly from Google Maps @done (March 1st 2017, 23:23)
 	☐ Make map not scrolls (by mouse scroll) when mouse is hovering it, requires JavaScript
 *******************************************************************************************
