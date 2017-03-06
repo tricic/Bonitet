@@ -34,9 +34,6 @@ Fourth section:
 
 Google map:
 	✔ When on remote server, Google map is not shown at all @done (March 1st 2017, 23:23)
-		// Console log msg:
-		// Mixed Content: The page at 'https://bonitet.000webhostapp.com/' was loaded over HTTPS, but requested an insecure resource 'http://www.citymaps.ie/create-google-map/map.php?width=100%&height=350&hl=e…njigovodstvo%20%22BONITET%22%20Cazin)&ie=UTF8&t=&z=17&iwloc=A&output=embed'. This request
-		// has been blocked; the content must be served over HTTPS.
 		// Fix: embed directly from google maps
 
 Footer:
@@ -49,7 +46,7 @@ Footer:
 
 ************************************* LOW PRIORITY ****************************************
 *:
-	☐ Do meta tags / SEO
+	✔ Do meta tags / SEO @done (March 6th 2017, 19:26)
 	✔ Decrease font sizes for xs screens if needed @done (February 27th 2017, 22:57)
 		✔ Section2  @done (February 27th 2017, 17:40)
 
