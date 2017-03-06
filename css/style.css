@@ -248,13 +248,13 @@ section#fourth .infoBox i {
     section#fourth .infoBox .email {
         font-size: 16px;
     }
-    
-    section#fourth .infoBox span[style="visibility: hidden;"] {
-        font-size: 24px;
-    }
 }
 
 @media screen and (min-width: 992px) {
+    section#fourth .infoBox {
+        height: 145px;
+    }
+
     section#fourth .infoBox {
         border-right: 1px solid dimgray;
     }
@@ -289,10 +289,6 @@ section#fourth .infoBox i {
         float: left; /* Only for IE, android browser.. */
         text-align: left;
     }
-
-    section#fourth .infoBox span[style="visibility: hidden;"] {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -319,12 +315,13 @@ footer {
     background-color: #2C3E50;
     color: white;
     font-size: 15px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;    
 }
 
 footer p {
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 footer a {
@@ -335,4 +332,14 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+@media screen and (max-width: 767px) {
+    footer a {
+        float: left;
+    }
+}
+
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"] {
+    display: none;
 }
