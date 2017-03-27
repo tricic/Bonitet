@@ -30,7 +30,8 @@ Third section:
 Fourth section:
 	✔ infoBoxes are centered (on <= small screens) in IE, android browser... @done (February 28th 2017, 14:11)
 		// Added property float: left for i and span element (into media query for <= small screens)
-	☐ .infoBox > span element is not vertically centered to bottom in IE, Edge, android browser...
+	✘ .infoBox > span element is not vertically centered to bottom in IE, Edge, android browser... @canceled (March 27th 2017, 23:12)
+		// Looks alright
 
 Google map:
 	✔ When on remote server, Google map is not shown at all @done (March 1st 2017, 23:23)
@@ -48,12 +49,12 @@ Footer:
 *:
 	✔ Do meta tags / SEO @done (March 6th 2017, 19:26)
 	✔ Decrease font sizes for xs screens if needed @done (February 27th 2017, 22:57)
-		✔ Section2  @done (February 27th 2017, 17:40)
+	✔ Section2  @done (February 27th 2017, 17:40)
 
 Navigation:
 	☐ Make on-click toggle navigation for xs screens, requires JavaScript
 
 Google map:
 	✔ Recreate google map by embeding it directly from Google Maps @done (March 1st 2017, 23:23)
-	☐ Make map not scrolls (by mouse scroll) when mouse is hovering it, requires JavaScript
+	✔ Make map not scrolls (by mouse scroll) when mouse is hovering it, requires JavaScript @done (March 27th 2017, 22:50)
 *******************************************************************************************
