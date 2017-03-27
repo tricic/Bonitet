@@ -308,6 +308,23 @@ section#fourth .infoBox i {
 
 /***************************** GOOGLE MAP *******************************/
 
+#googlemap {
+    height: 345px;
+    overflow: hidden;
+}
+
+#googlemap iframe {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: -51px;
+    pointer-events: none;
+}
+
+#googlemap iframe.clicked {
+    pointer-events: auto;
+}
 
 /***************************** FOOTER ******************************/
 
