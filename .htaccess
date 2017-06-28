@@ -1,0 +1,6 @@
+# HTID:540763: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:540763:
+
+Options -Indexes +MultiViews
+ErrorDocument 404 http://bonitet-cazin.com/error.html
