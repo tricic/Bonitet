@@ -2,12 +2,12 @@
 To build:
     ✔ Build 'Kontakt' page @done (February 25th 2017, 0:13)
 	✔ Build 'Usluge' page @done (February 27th 2017, 22:57)
-	☐ Build 'Korisni linkovi' page
+	✔ Build 'Korisni linkovi' page @done (February 27th 2017, 23:15)
 
 Pages:
 	✘ Add transitions to the pages @canceled (February 25th 2017, 0:27) 
 		// Transitions are laggy, canceled
-	☐ Make contact page functional
+	✔ Make contact page functional @done (June 28th 2017, 1:28)
  
 Navigation:
 	✔ Enlarge navigation fonts for xs screens @done (February 25th 2017, 0:44)
@@ -52,9 +52,9 @@ Footer:
 	✔ Section2  @done (February 27th 2017, 17:40)
 
 Navigation:
-	☐ Make on-click toggle navigation for xs screens, requires JavaScript
+	✔ Make on-click toggle navigation for xs screens @done (June 28th 2017, 16:01)
 
 Google map:
 	✔ Recreate google map by embeding it directly from Google Maps @done (March 1st 2017, 23:23)
-	✔ Make map not scrolls (by mouse scroll) when mouse is hovering it, requires JavaScript @done (March 27th 2017, 22:50)
+	✔ Make map not scrolls (by mouse scroll) when mouse is hovering it @done (March 27th 2017, 22:50)
 *******************************************************************************************

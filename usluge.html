@@ -11,7 +11,7 @@
         <link rel="icon" href="images/icon.png">
 
         <!-- Title -->
-        <title>Knjigovodstvo "BONITET" Cazin | Usluge</title>
+        <title>Usluge | Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
 
         <!-- jQuery -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,21 +28,30 @@
     </head>
     <body>
         <header>
-            <div class="container" id="TOP">
+            <div class="container">
                 <div class="row">
                     <div id="logo" class="col-xs-12 col-sm-3">
                         BONITET
+                        <div id="nav-button">
+                            <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
                     </div>
 
                     <div id="nav" class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xs-offset-0 col-md-offset-1 col-lg-offset-2">
                         <nav>
-                            <!-- I do not prefer list nav -->
-                            <a href="index.html">O nama</a>
-                            <a href="usluge.html" class="current">Usluge</a>
-                            <a href="kontakt.html">Kontakt</a>
-                            <a href="linkovi.html">Korisni linkovi</a>
+                            <!-- Life's too short to use list here -->
+                            <a href="http://bonitet-cazin.com/">O nama</a>
+                            <a href="usluge" class="current">Usluge</a>
+                            <a href="kontakt">Kontakt</a>
+                            <a href="linkovi">Korisni linkovi</a>
                         </nav>
                     </div>
+
+                    <script>
+                        $('#nav-button').click(function() {
+                            $('#nav').toggle('fast', 'linear');
+                        });
+                    </script>
                 </div>
             </div>
         </header>
@@ -92,7 +101,7 @@
                             </ul>-->
                         </div>
                         <div class="col-xs-12">
-                            <p>Zainteresovani ste za naše usluge? Posjetite nas, pozovite nas ili nas <a href="kontakt.html">kontaktirajte online</a>!</p>
+                            <p>Zainteresovani ste za naše usluge? Posjetite nas, pozovite nas ili nas <a href="kontakt">kontaktirajte online</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -131,8 +140,8 @@
 
         <footer style="border-top: 1px solid dimgray;">
             <div class="container">
-                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: Ismar Tričić</p>
-                <a href="#TOP">Nazad na vrh</a>
+                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: ismar.tricic@gmail.com</p>
+                <a href="javascript:void(0)" onclick="$(document.body).animate({'scrollTop' : 0}, 1000)" style="color: white;">Nazad na vrh</a>
             </div>
         </footer>
     </body>
