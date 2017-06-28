@@ -1,3 +1,36 @@
+<?php
+    if(isset($_POST['send'])) {
+        if(!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
+            $name  = trim($_POST['name']);
+            $mail  = trim($_POST['email']);
+            $msg   = trim($_POST['message']);
+            $phone = trim($_POST['phone']);
+
+            $from    = $mail ? $mail : "nepoznato@mail.com";
+            $to      = "ismar.tricic@gmail.com";
+            $subject = 'Kontakt | bonitet-cazin.com';
+            
+            $headers  = "MIME-Version: 1.0\r\n"; 
+            $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+            $headers .= "From: $name <$from>\r\n";
+
+            $msg = "
+                <html>
+                    <head>
+                    </head>
+                    <body>
+                        <p>Ime: $name</p>
+                        <p>Kontakt: $phone</p>
+                        <p>Email: $from</p>
+                        <p>Poruka: $msg</p>
+                    </body>
+                </html>
+            ";
+
+            $success = mail($to, $subject, $msg, $headers);
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="bs-BA">
     <head>
@@ -11,7 +44,7 @@
         <link rel="icon" href="images/icon.png">
 
         <!-- Title -->
-        <title>Knjigovodstvo "BONITET" Cazin | Kontakt</title>
+        <title>Kontakt | Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
 
         <!-- jQuery -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,21 +61,30 @@
     </head>
     <body>
         <header>
-            <div class="container" id="TOP">
+            <div class="container">
                 <div class="row">
                     <div id="logo" class="col-xs-12 col-sm-3">
                         BONITET
+                        <div id="nav-button">
+                            <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
                     </div>
 
                     <div id="nav" class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xs-offset-0 col-md-offset-1 col-lg-offset-2">
                         <nav>
-                            <!-- I do not prefer list nav -->
-                            <a href="index.html">O nama</a>
-                            <a href="usluge.html">Usluge</a>
-                            <a href="kontakt.html" class="current">Kontakt</a>
-                            <a href="linkovi.html">Korisni linkovi</a>
+                            <!-- Life's too short to use list here -->
+                            <a href="http://bonitet-cazin.com/">O nama</a>
+                            <a href="usluge">Usluge</a>
+                            <a href="kontakt" class="current">Kontakt</a>
+                            <a href="linkovi">Korisni linkovi</a>
                         </nav>
                     </div>
+
+                    <script>
+                        $('#nav-button').click(function() {
+                            $('#nav').toggle('fast', 'linear');
+                        });
+                    </script>
                 </div>
             </div>
         </header>
@@ -52,23 +94,34 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12" id="form">
-                            <form action="" method="POST">
+                            <form method="POST">
                                 <div class="form-group">
-                                    <label for="name">Ime i prezime:</label>
-                                    <input type="text" class="form-control" name="name" placeholder="Ime Prezime" required disabled="disabled">
+                                    <label for="name">Ime i prezime: *</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Ime Prezime" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">E-mail adresa:</label>
-                                    <input type="email" class="form-control" name="email" placeholder="primjer@email.com" required disabled="disabled">                    
+                                    <label for="name">Kontakt telefon: *</label>
+                                    <input type="text" class="form-control" name="phone" value="+387" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="message">Poruka:</label>
-                                    <textarea class="form-control" rows="5" name="message" placeholder="Vaša poruka..." required disabled="disabled"></textarea>
+                                    <label for="email">E-mail adresa: </label>
+                                    <input type="email" class="form-control" name="email" placeholder="primjer@email.com">                    
                                 </div>
 
-                                <input type="submit" name="send" class="btn btn-primary" value="Pošalji poruku!" disabled="disabled">
+                                <div class="form-group">
+                                    <label for="message">Poruka: *</label>
+                                    <textarea class="form-control" rows="5" name="message" placeholder="Vaša poruka..." minlength="10" maxlength="1000" required></textarea>
+                                </div>
+
+                                <input type="submit" name="send" class="btn btn-primary" value="Pošalji poruku!">
+
+                                <span class="small">
+                                    * su obavezna polja
+                                    <br>
+                                    Ukoliko želite biti kontaktirani putem telefona, email nije potreban
+                                </span>
                             </form>
                         </div>
                     </div>
@@ -120,9 +173,23 @@
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: Ismar Tričić</p>
-                <a href="#TOP">Nazad na vrh</a>
+                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: ismar.tricic@gmail.com</p>
+                <a href="javascript:void(0)" onclick="$(document.body).animate({'scrollTop' : 0}, 1000)" style="color: white;">Nazad na vrh</a>
             </div>
         </footer>
+        
+        <?php
+            if(isset($success)) {
+                if($success) {
+                    ?>
+                    <script>alert('Poruka je uspješno poslana, bićete kontaktirani. Hvala!');</script>
+                    <?php
+                } else {
+                    ?>
+                    <script>alert('Trenutno nije moguće poslati mail, molimo nazovite nas.');</script>
+                    <?php
+                }
+            }
+        ?>
     </body>
 </html>
