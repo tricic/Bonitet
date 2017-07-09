@@ -14,13 +14,13 @@
         <!-- SEO -->
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="knjigovodstvo, računovodstvo, knjigovodja, računovodja, pdv, obračun, završni račun, porez, savjetovanje, zakon, knjizenje, izračun, plate, cazin, bihac">
-        <meta name="description" content="Knjigovodstveni biro BONITET po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskong kantona i šire.">
+        <meta name="description" content="Knjigovodstveni biro BONITET po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskog kantona.">
 
         <!-- Icons-->
         <link rel="icon" href="images/icon.png">
 
         <!-- Title -->
-        <title>Knjigovodstvo i računovodstvo "BONITET" Cazin | Poslovno savjetovanje</title>
+        <title>Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
 
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
