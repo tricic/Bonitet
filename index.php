@@ -13,7 +13,7 @@
 
         <!-- SEO -->
         <meta name="robots" content="index, follow">
-        <meta name="keywords" content="knjigovodstvo, računovodstvo, knjigovodja, računovodja, pdv, obračun, završni račun, porez, savjetovanje, zakon, knjizenje, izračun, plate, cazin, bihac">
+        <meta name="keywords" content="knjigovodstvo, računovodstvo, knjigovodja, računovodja, pdv, obračun, završni račun, porez, prijava, firma, savjetovanje, zakon, knjizenje, izračun, plate, cazin, bihac">
         <meta name="description" content="Knjigovodstveni biro BONITET po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskog kantona.">
 
         <!-- Icons-->
