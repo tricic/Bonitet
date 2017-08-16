@@ -26,8 +26,6 @@ header nav {
     float: right;
     display: flex;
     height: 100%;
-    
-    border-left: 1px solid gray;
 }
 
 header nav a {
@@ -39,8 +37,6 @@ header nav a {
     padding-top: 4%;
     padding-left: 10px;
     padding-right: 10px;
-
-    border-right: 1px solid gray;
 
     transition: 0.5s background-color ease;
 
@@ -123,6 +119,7 @@ header div#nav-button button {
     }
 
     header nav a {
+        height: 40px;
         display: block;
         font-size: 25px;
         padding-top: 2px;
@@ -133,105 +130,105 @@ header div#nav-button button {
 
 /***************************** MAIN ******************************/
 
-/*** FIRST SECTION /***/
+/*** HERO SECTION /***/
 
-section#first {
+section#hero {
     padding-top: 25px;
     padding-bottom: 35px;
     background: url("../images/section1bg.jpg") no-repeat center center;
     background-size: 100%;
 }
 
-section#first .aboutUs {
+section#hero .aboutUs {
     background-color: rgba(236, 240, 241, 0.6);
 }
 
-section#first .aboutUs h1 {
+section#hero .aboutUs h1 {
     font-weight: bold;
 }
 
-section#first .aboutUs p {
+section#hero .aboutUs p {
     font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-    section#first {
+    section#hero {
         background-size: cover;
     }
 
-    section#first .aboutUs h1 {
+    section#hero .aboutUs h1 {
         font-size: 22px;
     }
 
-    section#first .aboutUs p {
+    section#hero .aboutUs p {
         font-size: 17px;
     }
 }
 
-/*** SECOND SECTION ***/
+/*** TAGLINE SECTION ***/
 
-section#second {
+section#tagline {
     background-color: #67809F;
 }
 
-section#second p {
+section#tagline h2 {
     font-family: 'Russo One', sans-serif;
     font-size: 40px;
     text-align: center;
     color: white;
-    margin-bottom: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 @media screen and (max-width: 767px) {
-    section#second p {
+    section#tagline h2 {
         font-size: 30px;
     }
 }
 
-/*** THIRD SECTION ***/
+/*** OFFERS SECTION ***/
 
-section#third {
+section#offers {
     padding-top: 20px;
 }
 
-section#third h3 {
+section#offers h3 {
     color: #2c3e50;
     font-weight: bold;
 }
 
-section#third div.container > p {
+section#offers div.container > h2 {
     display: inline-block;
     font-size: 30px;
-    border-bottom: 1px solid black;
 }
 
-section#third img {
+section#offers img {
     border-radius: 10px;
 }
 
-section#third .boxText {
+section#offers .boxText {
     font-size: 20px;
     padding-top: 15px;
 }
 
-section#third .usluge {
+section#offers .usluge {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-section#third .usluge p {
+section#offers .usluge p {
     font-size: 30px;
     float: right;
 }
 
-section#third button {
+section#offers button {
     width: 100%;
     font-size: 20px;
     color: black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    section#third .box img {
+    section#offers .box img {
         display: block;
         float: left;
         margin-right: 20px;
@@ -239,9 +236,23 @@ section#third button {
 
 }
 
-/*** FOURTH SECTION ***/
+@media screen and (max-width: 768px) {
+    section#offers .box img {
+        display: none;
+    }
 
-section#fourth {
+    section#offers .usluge p {
+        font-size: 25px;
+    }
+
+    section#offers .boxText {
+        padding-top: 0px;
+    }
+}
+
+/*** INFOS SECTION ***/
+
+section#infos {
     background-color: #2C3E50;
     
     -webkit-box-shadow: 0px -7px 22px 0px rgba(0,0,0,0.46);
@@ -249,61 +260,61 @@ section#fourth {
     box-shadow: 0px -7px 22px 0px rgba(0,0,0,0.46);
 }
 
-section#fourth .row {
+section#infos .row {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-section#fourth .infoBox {
+section#infos .infoBox {
     color: white;
     text-align: center;
 }
 
-section#fourth .infoBox h4 {
+section#infos .infoBox h4 {
     font-weight: bold;
 }
 
-section#fourth .infoBox span {
+section#infos .infoBox span {
     font-size: 20px;
 }
 
-section#fourth .infoBox i {
+section#infos .infoBox i {
     font-size: 50px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    section#fourth .infoBox .email {
+    section#infos .infoBox .email {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    section#fourth .infoBox {
+    section#infos .infoBox {
         height: 145px;
     }
 
-    section#fourth .infoBox {
+    section#infos .infoBox {
         border-right: 1px solid dimgray;
     }
 }
 
 @media screen and (max-width: 991px) {
-    section#fourth .row {
+    section#infos .row {
         padding: 0px;
     }
 
-    section#fourth .infoBox {
+    section#infos .infoBox {
         text-align: unset;
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid dimgray;
     }
 
-    section#fourth .infoBox h4 {
+    section#infos .infoBox h4 {
         float: right;
     }
 
-    section#fourth .infoBox i {
+    section#infos .infoBox i {
         display: inline-block;
         width: 50px;
         text-align: center;
@@ -311,7 +322,7 @@ section#fourth .infoBox i {
         float: left; /* Only for IE, android browser.. */
     }
 
-    section#fourth .infoBox span {
+    section#infos .infoBox span {
         display: inline-block;
         float: left; /* Only for IE, android browser.. */
         text-align: left;
@@ -319,11 +330,11 @@ section#fourth .infoBox i {
 }
 
 @media screen and (max-width: 767px) {
-    section#fourth .infoBox h4 {
+    section#infos .infoBox h4 {
         display: none;
     }
 
-    section#fourth .infoBox span {
+    section#infos .infoBox span {
         font-size: 18px;
     }
 
@@ -368,12 +379,12 @@ footer p {
     margin-bottom: 0px;
 }
 
-footer a {
+footer #to-top {
     float: right;
     color: white;
     text-decoration: underline;
 }
 
-footer a:hover {
+footer #top-top:hover {
     color: white;
 }

@@ -1,40 +1,36 @@
-<?php
-    $counter = file_get_contents('counter.txt');
-    file_put_contents('counter.txt', ++$counter);
-?>
 <!DOCTYPE html>
 <html lang="bs-BA">
     <head>
-        <!-- Meta -->
+        <!-- Basic meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Ismar Tričić">
 
+        <!-- Title -->
+        <title>Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
+
         <!-- SEO -->
         <meta name="robots" content="index, follow">
-        <meta name="keywords" content="knjigovodstvo, računovodstvo, knjigovodja, računovodja, pdv, obračun, završni račun, porez, prijava, firma, savjetovanje, zakon, knjizenje, izračun, plate, cazin, bihac">
-        <meta name="description" content="Knjigovodstveni biro BONITET po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskog kantona.">
+        <meta name="description" content="Knjigovodstvo BONITET po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskog kantona.">
+        <meta name="organization" content="BONITET doo Cazin - Knjigovodstveni biro">
+        <link rel="canonical" href="http://www.bonitet-cazin.ba/">
 
         <!-- Icons-->
         <link rel="icon" href="images/icon.png">
 
-        <!-- Title -->
-        <title>Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext">
 
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="vendor/bootstrap.min.css">
 
-        <!-- Bootstrap & CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -49,26 +45,18 @@
 
                     <div id="nav" class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xs-offset-0 col-md-offset-1 col-lg-offset-2">
                         <nav>
-                            <!-- Life's too short to use list here -->
                             <a href="http://bonitet-cazin.com/" class="current">O nama</a>
                             <a href="usluge">Usluge</a>
                             <a href="kontakt">Kontakt</a>
                             <a href="linkovi">Korisni linkovi</a>
                         </nav>
                     </div>
-
-                    <script>
-                        $('#nav-button').click(function() {
-                            $('#nav').toggle('fast', 'linear');
-                            $('#nav').css('display', 'block');
-                        });
-                    </script>
                 </div>
             </div>
         </header>
         
         <main>
-            <section id="first">
+            <section id="hero">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-7 col-lg-6 aboutUs">
@@ -81,19 +69,23 @@
                 </div>
             </section>
 
-            <section id="second">
+            <section id="tagline">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Vaše ideje pretvaramo u biznis!</p>
+                            <h2>Vaše ideje pretvaramo u biznis!</h2>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="third">
+            <section id="offers">
                 <div class="container">
-                    <p>Šta nudimo?</p>
+                    <h2>
+                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                        Šta nudimo?
+                    </h2>
+
                     <div class="row">
                         <div class="col-xs-12 col-md-4 box">
                             <h3>Računovodstvene usluge</h3>
@@ -127,7 +119,7 @@
             </section>
 
 
-            <section id="fourth">
+            <section id="infos">
                 <div class="container">
                     <div class="row">
                         <div class="infoBox col-xs-12 col-md-3">
@@ -159,22 +151,17 @@
 
             <div id="googlemap">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MssHFvV3PQ7bglTTNVk35sW6634"></iframe>
-                <script>
-                    // This script disables map mouse scroll unless its clicked (using jQuery)
-					$('#googlemap')
-						.click(function(){
-								$(this).find('iframe').addClass('clicked')})
-						.mouseleave(function(){
-								$(this).find('iframe').removeClass('clicked')});
-				</script>
             </div>
         </main>
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: ismar.tricic@gmail.com</p>
-                <a href="javascript:void(0)" onclick="$(document.body).animate({'scrollTop' : 0}, 1000)" style="color: white;">Nazad na vrh</a>
+                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Developed by: ismar.tricic@gmail.com</p>
+                <a href="javascript:void(0)" id="to-top">Nazad na vrh</a>
             </div>
         </footer>
+        
+        <script src="vendor/jquery.min.js"></script>
+        <script src="js/functions.js"></script>
     </body>
 </html>

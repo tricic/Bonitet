@@ -6,7 +6,7 @@
             $msg   = trim($_POST['message']);
             $phone = trim($_POST['phone']);
 
-            $from    = $mail ? $mail : "nepoznato@mail.com";
+            $from    = "poruka@bonitet-cazin.com";
             $to      = "ismar.tricic@gmail.com";
             $subject = 'Kontakt | bonitet-cazin.com';
             
@@ -20,8 +20,8 @@
                     </head>
                     <body>
                         <p>Ime: $name</p>
-                        <p>Kontakt: $phone</p>
-                        <p>Email: $from</p>
+                        <p>Broj: $phone</p>
+                        <p>Email: $mail</p>
                         <p>Poruka: $msg</p>
                     </body>
                 </html>
@@ -34,30 +34,34 @@
 <!DOCTYPE html>
 <html lang="bs-BA">
     <head>
-        <!-- Meta -->
+        <!-- Basic meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Ismar Tričić">
-
-        <!-- Icons-->
-        <link rel="icon" href="images/icon.png">
 
         <!-- Title -->
         <title>Kontakt | Knjigovodstvo i računovodstvo "BONITET" Cazin</title>
 
-        <!-- jQuery -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- SEO -->
+        <meta name="description" content="Kontaktirajte naš knjigvodstveni biro preko telefona, e-maila, web stranice ili nas posjetite u Cazinu.">
+        <meta name="organization" content="BONITET doo Cazin - Knjigovodstveni biro">
 
-        <!-- Bootstrap & CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <!-- Icons-->
+        <link rel="icon" href="images/icon.png">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="vendor/bootstrap.min.css">
+
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/kontakt.css">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -72,19 +76,12 @@
 
                     <div id="nav" class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xs-offset-0 col-md-offset-1 col-lg-offset-2">
                         <nav>
-                            <!-- Life's too short to use list here -->
                             <a href="http://bonitet-cazin.com/">O nama</a>
                             <a href="usluge">Usluge</a>
                             <a href="kontakt" class="current">Kontakt</a>
                             <a href="linkovi">Korisni linkovi</a>
                         </nav>
                     </div>
-
-                    <script>
-                        $('#nav-button').click(function() {
-                            $('#nav').toggle('fast', 'linear');
-                        });
-                    </script>
                 </div>
             </div>
         </header>
@@ -119,8 +116,6 @@
 
                                 <span class="small">
                                     * su obavezna polja
-                                    <br>
-                                    Ukoliko želite biti kontaktirani putem telefona, email nije potreban
                                 </span>
                             </form>
                         </div>
@@ -128,7 +123,7 @@
                 </div>
             </section>
 
-            <section id="fourth">
+            <section id="infos">
                 <div class="container">
                     <div class="row">
                         <div class="infoBox col-xs-12 col-md-3">
@@ -160,24 +155,19 @@
 
             <div id="googlemap">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MssHFvV3PQ7bglTTNVk35sW6634"></iframe>
-                <script>
-                    // This script disables map mouse scroll unless its clicked (using jQuery)
-					$('#googlemap')
-						.click(function(){
-								$(this).find('iframe').addClass('clicked')})
-						.mouseleave(function(){
-								$(this).find('iframe').removeClass('clicked')});
-				</script>
             </div>
         </main>
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Website developer: ismar.tricic@gmail.com</p>
-                <a href="javascript:void(0)" onclick="$(document.body).animate({'scrollTop' : 0}, 1000)" style="color: white;">Nazad na vrh</a>
+                <p>Copyright &copy; Knjigovodstveni biro "BONITET" 2017. <br> Developed by: ismar.tricic@gmail.com</p>
+                <a href="javascript:void(0)" id="to-top">Nazad na vrh</a>
             </div>
         </footer>
         
+        <script src="vendor/jquery.min.js"></script>
+        <script src="js/functions.js"></script>
+
         <?php
             if(isset($success)) {
                 if($success) {

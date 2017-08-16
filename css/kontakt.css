@@ -16,3 +16,10 @@ section#contact-form p {
 section#contact-form h2 {
     font-weight: bold;
 }
+
+@media screen and (min-width: 768px) {
+    div#form input[type="text"],
+    div#form input[type="email"] {
+        width: 70%;
+    }
+}
