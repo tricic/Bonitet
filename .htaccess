@@ -3,5 +3,5 @@
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:540763:
 
-Options -Indexes +MultiViews
+Options -Indexes
 ErrorDocument 404 http://bonitet-cazin.com/404.html
