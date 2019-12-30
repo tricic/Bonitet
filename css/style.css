@@ -1,3 +1,7 @@
+﻿img[alt="www.000webhost.com"] {
+    display: none;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #ecf0f1;
@@ -187,9 +191,9 @@ section#tagline h2 {
     }
 }
 
-/*** OFFERS SECTION ***/
+/*** SERVICES SECTION ***/
 
-section#offers {
+section#services {
     padding-top: 20px;
     
     -webkit-box-shadow: inset 0px 7px 22px 0px rgba(0,0,0,0.46);
@@ -197,45 +201,44 @@ section#offers {
     box-shadow: inset 0px 7px 22px 0px rgba(0,0,0,0.46);
 }
 
-section#offers h3 {
+section#services h3 {
     font-family: 'Josefin Sans', sans-serif;
     color: #2c3e50;
     font-weight: bold;
 }
 
-section#offers div.container > h2 {
-    font-family: 'Josefin Sans', sans-serif;
+section#services div.container > h2 {
     display: inline-block;
     font-size: 30px;
 }
 
-section#offers img {
+section#services img {
     border-radius: 10px;
 }
 
-section#offers .boxText {
+section#services .boxText {
     font-size: 20px;
     padding-top: 15px;
 }
 
-section#offers .usluge {
+section#services .usluge {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-section#offers .usluge p {
+section#services .usluge p {
     font-size: 30px;
     float: right;
 }
 
-section#offers button {
+section#services button {
     width: 100%;
     font-size: 20px;
     color: black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    section#offers .box img {
+    section#services .box img {
         display: block;
         float: left;
         margin-right: 20px;
@@ -244,15 +247,15 @@ section#offers button {
 }
 
 @media screen and (max-width: 768px) {
-    section#offers .box img {
+    section#services .box img {
         display: none;
     }
 
-    section#offers .usluge p {
+    section#services .usluge p {
         font-size: 25px;
     }
 
-    section#offers .boxText {
+    section#services .boxText {
         padding-top: 0px;
     }
 }
@@ -385,4 +388,31 @@ section#infos .infoBox i {
     float: right;
     color: white;
     text-decoration: underline;
+}
+
+/***************************** KONTAKT ******************************/
+section#contact-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#form input[type="submit"] {
+    float: right;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+section#contact-form p {
+    font-size: 18px;
+}
+
+section#contact-form h2 {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    div#form input[type="text"],
+    div#form input[type="email"] {
+        width: 70%;
+    }
 }
