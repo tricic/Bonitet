@@ -126,7 +126,7 @@
                 <div class="container animated fadeIn">
                     <div class="row">
                         <div class="col-xs-12" id="form">
-                            <form action="kontakt.php" method="POST">
+                            <form action="https://formspree.io/mwkweknr" method="POST">
                                 <div class="form-group">
                                     <label for="name">Ime i prezime: *</label>
                                     <input type="text" class="form-control" name="name" placeholder="Ime Prezime" required>
@@ -146,12 +146,8 @@
                                     <label for="message">Poruka: *</label>
                                     <textarea class="form-control" rows="5" name="message" placeholder="Vaša poruka..." minlength="10" maxlength="1000" required></textarea>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label for"antibot">[AntiBot] Dva plus tri? </label>
-                                    <input type="number" class="form-control" name="antibot" placeholder="Unesite broj...">
-                                </div>
     
+                                <input type="hidden" name="_language" value="hr">
                                 <input type="submit" name="send" class="btn btn-primary" value="Pošalji poruku!">
     
                                 <span class="small">
