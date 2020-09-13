@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bs-BA">
+<html lang="bs">
     <head>
         <!-- Basic meta -->
         <meta charset="utf-8">
@@ -17,18 +17,18 @@
         <meta name="robots" content="index, nofollow">
         <meta name="description" content="Knjigovodstvo Bonitet po povoljnim cijenama pruža knjigovodstvene i računovodstvene usluge za preduzeća na području Unsko-sanskog kantona.">
         <meta name="organization" content="Bonitet d.o.o. Cazin">
-        <link rel="canonical" href="http://bonitet-cazin.com/">
+        <link rel="canonical" href="https://bonitet-cazin.com/">
 
         <!-- Icons-->
         <link rel="icon" href="images/icon.png">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&amp;subset=latin-ext">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="vendor/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
 		
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -41,31 +41,33 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <div class="row">
-                    <div id="logo" class="col-xs-12 col-sm-3">
-                        BONITET
-                        <div id="nav-button">
-                            <button><i class="fa fa-bars" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
-
-                    <div id="nav" class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xs-offset-0 col-md-offset-1 col-lg-offset-2">
-                        <nav>
-                            <a href="#home" class="current">O nama</a>
-                            <a href="#kontakt">Kontakt</a>
-                        </nav>
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-0">
+                <div class="container px-2">
+                    <a class="navbar-brand p-0" href="#">BONITET</a>
+                    
+                    <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hero">O nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Kontakt</a>
+                            </li>
+                        </ul>   
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
-        
-        <!-- INDEX / HOME -->
-        <section id="page-index">
-            <section id="hero">
+
+        <main>
+            <section id="hero" class="py-5">
                 <div class="container animated fadeIn">
                     <div class="row">
-                        <article class="col-xs-12 col-md-7 col-lg-6 aboutUs">
+                        <article class="about-us col-lg-7 pt-2">
                             <h1>Knjigovodstveni biro "BONITET"</h1>
                             <p>Knjigovodstveni biro Bonitet iz Cazina već duži niz godina vrši knjigovodstvene i računovodstvene usluge za velika i mala preduzeća. U našem knjigovodstvenom birou možete dobiti sve potrebne usluge kao i savjete za Vaše malo ili veliko preduzeće, te samostalne trgovinske i ugostiteljske radnje, proizvodne djelatnosti, građevinske djelatnosti i dr.
                             Knjigovodstveni biro vodi stručno osoblje sa odgovarajućim licencama.</p>
@@ -74,142 +76,136 @@
                 </div>
             </section>
 
-            <section id="tagline">
+            <div id="tagline">
                 <div class="container animated fadeIn">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2>Vaše ideje pretvaramo u biznis!</h2>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="services">
-                <div class="container animated fadeIn">
-                    <h2>
-                        <i class="fa fa-tasks" aria-hidden="true"></i>
-                        Šta nudimo?
-                    </h2>
-
-                    <div class="row">
-                        <article class="col-xs-12 col-md-4 box">
-                            <h3>Računovodstvene usluge</h3>
-                            <img src="images/accounting.jpg" alt="Box1Pic">
-                            <p class="boxText">Obračuni plaća, naknada, PDV-a, amortizacije, proizvodnje; izrade i predaje financijskih izvještaja...</p>
-                        </article>
-
-                        <article class="col-xs-12 col-md-4 box">
-                            <h3>Financijsko poslovanje</h3>
-                            <img src="images/finance.jpg" alt="Box2Pic">
-                            <p class="boxText">Izvještavanje o propisima, izrade raznih izvještaja, zastupanje korisnika po njihovoj punomoći...</p>
-                        </article>
-
-                        <article class="col-xs-12 col-md-4 box">
-                            <h3>Poslovno savjetovanje</h3>
-                            <img src="images/book.jpg" alt="Box3Pic">
-                            <p class="boxText">Poslovno i financijsko savjetovanje za unapređenje i razvoj poslovanja za naše klijente...</p>
-                        </article>
-                    </div>
-
-                    <div class="row usluge">
-                        <div class="col-md-6 col-md-offset-6">
-                            <p>...i mnogo više! Posjetite nas!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <!-- KONTAKT -->
-        <section id="page-kontakt" style="display: none;">
-            <section id="contact-form">
-                <div class="container animated fadeIn">
-                    <div class="row">
-                        <div class="col-xs-12" id="form">
-                            <form action="kontakt.php" method="POST">
-                                <div class="form-group">
-                                    <label for="name">Ime i prezime: *</label>
-                                    <input type="text" class="form-control" name="name" placeholder="Ime Prezime" required>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="name">Kontakt telefon: *</label>
-                                    <input type="text" class="form-control" name="phone" value="+387" required>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="email">E-mail adresa: </label>
-                                    <input type="email" class="form-control" name="email" placeholder="primjer@email.com">                    
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="message">Poruka: *</label>
-                                    <textarea class="form-control" rows="5" name="message" placeholder="Vaša poruka..." minlength="10" maxlength="1000" required></textarea>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for"antibot">[AntiBot] Dva plus tri? </label>
-                                    <input type="number" class="form-control" name="antibot" placeholder="Unesite broj...">
-                                </div>
-    
-                                <input type="submit" name="send" class="btn btn-primary" value="Pošalji poruku!">
-    
-                                <span class="small">
-                                    * obavezna polja
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="infos">
-            <div class="container">
-                <div class="row">
-                    <div class="infoBox col-xs-12 col-md-3">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <h4>Pozovite nas</h4>
-                        <span>+387 37 511-444</span>
-                    </div>
-
-                    <div class="infoBox col-xs-12 col-md-3">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <h4>Posjetite nas</h4>
-                        <span>Hamdije Omanovića bb, Cazin</span>
-                    </div>
-
-                    <div class="infoBox col-xs-12 col-md-3">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <h4>Pošaljite nam e-mail</h4>
-                        <span class="email">bonitetcazin@gmail.com</span>
-                    </div>
-
-                    <div class="infoBox col-xs-12 col-md-3" style="border: none;">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <h4>Radno vrijeme</h4>
-                        <span>PON - PET <br> 07:30 - 15:30</span>
-                    </div>
+                    <p class="text-center m-0 py-1">Vaše ideje pretvaramo u biznis!</p>
                 </div>
             </div>
-        </section>
+            
+            <section id="services">
+                <div class="container animated fadeIn py-4">
+                    <h1>
+                        <i class="fa fa-tasks" aria-hidden="true"></i> Šta nudimo?
+                    </h1>
 
-        <div id="map">
-            <iframe src="http://www.openstreetmap.org/export/embed.html?bbox=15.937205851078035%2C44.96505412912552%2C15.94157785177231%2C44.96673552392867&amp;layer=mapnik&amp;marker=44.96589483268751%2C15.939391851425171"></iframe>
-        </div>
+                    <div class="row">
+                        <article class="service col-lg-4 my-3">
+                            <h2>Računovodstvene usluge</h2>
+                            <img src="images/accounting.jpg" alt="Accounting" class="rounded">
+                            <p class="mt-2">Obračuni plaća, naknada, PDV-a, amortizacije, proizvodnje; izrade i predaje financijskih izvještaja...</p>
+                        </article>
 
-        <footer id="footer">
-            <div class="container">
+                        <article class="service col-lg-4 my-3">
+                            <h2>Financijsko poslovanje</h2>
+                            <img src="images/finance.jpg" alt="Finance" class="rounded">
+                            <p class="mt-2">Izvještavanje o propisima, izrade raznih izvještaja, zastupanje korisnika po njihovoj punomoći...</p>
+                        </article>
+
+                        <article class="service col-lg-4 my-3">
+                            <h2>Financijsko poslovanje</h2>
+                            <img src="images/book.jpg" alt="Book" class="rounded">
+                            <p class="mt-2">Poslovno i financijsko savjetovanje za unapređenje i razvoj poslovanja za naše klijente...</p>
+                        </article>
+                    </div>
+
+                    <p class="text-right h4">...i mnogo više! Posjetite nas!</p>
+                </div>
+            </section>
+
+            <section id="info-boxes">
+                <div class="container animated fadeIn py-3">
+                    <div class="row text-white">
+                        <div class="info-box col-lg-3 py-3">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <div class="h5">Pozovite nas</div>
+                            <div class="info-box-value">+387 37 511 444</div>
+                        </div>
+
+                        <div class="info-box col-lg-3 py-3">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <div class="h5">Pišite nam</div>
+                            <a class="info-box-value" href="mailto:bonitetcazin@gmail.com">bonitetcazin@gmail.com</a>
+                        </div>
+
+                        <div class="info-box col-lg-3 py-3">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="h5">Posjetite nas</div>
+                            <div class="info-box-value">Hamdije Omanovića bb, Cazin</div>
+                        </div>
+
+                        <div class="info-box col-lg-3 py-3">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <div class="h5">Radno vrijeme</div>
+                            <div class="info-box-value">
+                                PON - PET
+                                <span class="d-inline d-lg-none">|</span>
+                                <span class="d-none d-lg-block"></span>
+                                07:30 - 15:30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1411.4604436311754!2d15.938953970917568!3d44.965600816976725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x530cccb140095630!2sKnjigovodstvo%20Bonitet!5e0!3m2!1sbs!2sba!4v1599996132369!5m2!1sbs!2sba" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div id="seeyou">
+                <div class="container animated fadeIn py-2">
+                    <p class="mb-0 text-center">Nalazimo se u centru Cazina. Vidimo se!</div>
+                </div>
+            </div>
+
+            <section id="contact">
+                <div class="container animated fadeIn py-4">
+                    <h1 class="mb-3">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> Online kontakt
+                    </h1>
+
+                    <form action="https://formspree.io/mwkweknr" method="POST" class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Ime i prezime: *</label>
+                                <input type="text" class="form-control" name="name" placeholder="Ime Prezime" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Kontakt telefon: *</label>
+                                <input type="text" class="form-control" name="phone" value="+387" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>E-mail adresa: </label>
+                                <input type="email" class="form-control" name="email" placeholder="primjer@email.com">                    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Poruka: *</label>
+                                <textarea class="form-control" rows="6" name="message" placeholder="Vaša poruka..." minlength="10" maxlength="1000" required></textarea>
+                            </div>
+                            
+                            <small>* obavezna polja</small>
+
+                            <input type="hidden" name="_language" value="hr">
+                            <input type="submit" class="btn" value="Pošalji poruku!" style="float: right;">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container animated fadeIn py-2">
                 <small>
-                    Copyright &copy; 2017 Bonitet d.o.o. Cazin. Sva prava zadržana.
+                    &copy; 2017 - 2020 Bonitet d.o.o. Cazin. Sva prava zadržana.
                     <br>
-                    Design and development: <a href="http://tricic.net" target="_blank">Ismar Tričić, 2017.</a>
+                    Design and development: <a href="https://tricic.net" target="_blank">Ismar Tričić</a>
+                    <a href="#navbar" style="float: right;">Nazad na vrh</a>
                 </small>
-                <a href="#logo" id="scroll-top">Nazad na vrh</a>
             </div>
         </footer>
-        
-        <script src="vendor/jquery.min.js"></script>
-        <script src="js/SinglePageElementManager.js"></script>
     </body>
 </html>
